@@ -43,6 +43,12 @@ void main_menu()
         case 1:
             addDish();
             break;
+        case 2:
+            removeDish();
+            break;
+        //case 3:
+        //addCustomer();
+        //break;
         case 8:
             exit_menu();
             break;
