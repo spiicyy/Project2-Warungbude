@@ -56,17 +56,16 @@ void addDish()
 
 void exit_menu()
 {
-    FILE *splash = fopen("splash-screen.txt", "r");
+    FILE *splash = fopen("../controller/splash-screen.txt", "r");
 
     char s[10000];
     while (!feof(splash))
     {
-        fscanf(splash, "%[^\n]\n", s);
+        fscanf(splash, "%[^\n]%*c", s);
         printf("%s\n", s);
     }
 
     fclose(splash);
     puts("Press enter to continue...");
-    getchar();
     getchar();
 }
